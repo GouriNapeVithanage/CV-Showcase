@@ -1,0 +1,11 @@
+.body{
+    -fx-background-image: url(../imgs/main-menu-bg.jpg);
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.scroll-pane > .viewport { 
+    -fx-background-color: transparent;
+ }

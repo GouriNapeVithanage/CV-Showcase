@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" style="-fx-background-color: rgba(0, 0, 0, 0.78);" styleClass="body" stylesheets="@styles/body.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cm1601_cw_partb.SwitchSceneController">
+   <right>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="495.0" style="-fx-background-color: rgba(0, 0, 0, 0.8); -fx-border-color: white; -fx-border-width: 3;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0">
+               <image>
+                  <Image url="@imgs/logo-white.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="170.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="336.0" prefWidth="493.0" text="World Rally Cross Championship" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="HelveticaRounded-Bold" size="64.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="104.0" prefWidth="493.0" text="Devoloped By: Gouri Napevithanage(2237943)" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="HelveticaRounded-Bold" size="21.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="787.0" style="-fx-background-color: rgba(0, 0, 0, 0.78);" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="787.0" text="Rally Cross Standings" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="HelveticaRounded-Bold" size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <ScrollPane prefHeight="613.0" prefWidth="759.0" style="-fx-background-color: rgba(245, 40, 145, 0);" />
+            <AnchorPane prefHeight="97.0" prefWidth="796.0">
+               <children>
+                  <Button layoutX="23.0" layoutY="22.0" mnemonicParsing="false" onAction="#exit" prefHeight="54.0" prefWidth="346.0" stylesheets="@styles/button.css" text="Exit" textFill="#ff3a3a">
+                     <styleClass>
+                        <String fx:value="custom-button" />
+                        <String fx:value="exit-button" />
+                     </styleClass>
+                  </Button>
+                  <Button layoutX="409.0" layoutY="22.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="54.0" prefWidth="347.0" stylesheets="@styles/button.css" text="Back" textFill="WHITE">
+                     <styleClass>
+                        <String fx:value="custom-button" />
+                        <String fx:value="save-button" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
